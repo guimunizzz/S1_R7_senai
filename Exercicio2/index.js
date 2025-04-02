@@ -1,6 +1,6 @@
 let genero = prompt("Digite o genero do funcionario (DIGITE 'M' ou 'H'");
 
-if (genero != "M" && "H") {
+if (genero != "M" && genero != "H") {
   alert("ERRO - Você digitou de forma errada!!");
 } else {
   let salarioAtual = parseFloat(prompt("Digite o salário atual do funcionario: "));
