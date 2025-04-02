@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="AlgoritmoSalario"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 11:26:48 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtOFA3VTVNODsyMDI1LTA0LTAyOyIxMToxMTozNSAiOzI2NDE="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtOFA3VTVNODsyMDI1LTA0LTAyOyIxMToyNjo0OCAiOzE7Mjc1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioAtual, novoSalario" type="Real" array="False" size=""/>
+            <declare name="genero" type="String" array="False" size=""/>
+            <declare name="qntdAnos" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual o salario atual?&quot;" newline="True"/>
+            <input variable="salarioAtual"/>
+            <output expression="&quot;Qual o genero do funcionario? (DIGITE 'H' OU 'M')&quot;" newline="True"/>
+            <input variable="genero"/>
+            <output expression="&quot;Quantos anos o funcionario trabalha na empresa?&quot;" newline="True"/>
+            <input variable="qntdAnos"/>
+            <if expression="genero == &quot;M&quot;">
+                <then>
+                    <if expression="qntdAnos &gt; 20">
+                        <then>
+                            <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.23)"/>
+                        </then>
+                        <else>
+                            <if expression="qntdAnos &gt;= 15 &amp;&amp; qntdAnos &lt;= 20">
+                                <then>
+                                    <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.12)"/>
+                                </then>
+                                <else>
+                                    <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt;= 10">
+                                        <then>
+                                            <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.07)"/>
+                                        </then>
+                                        <else>
+                                            <if expression="qntdAnos &lt; 5">
+                                                <then>
+                                                    <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.04)"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="genero == &quot;H&quot;">
+                        <then>
+                            <if expression="qntdAnos &gt; 30">
+                                <then>
+                                    <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.25)"/>
+                                </then>
+                                <else>
+                                    <if expression="qntdAnos &gt;= 20 &amp;&amp; qntdAnos &lt;= 30">
+                                        <then>
+                                            <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.14)"/>
+                                        </then>
+                                        <else>
+                                            <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt;= 15">
+                                                <then>
+                                                    <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.08)"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="qntdAnos &lt; 5">
+                                                        <then>
+                                                            <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.03)"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Erro&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;O novo salario do funcionario &#233;: &quot; &amp;novoSalario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
