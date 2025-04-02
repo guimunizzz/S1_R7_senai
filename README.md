@@ -58,5 +58,3 @@ Programa que calcula o novo salário de funcionários com base em:
 1. Clone o repositório
 2. Abra os arquivos `.js` no VS Code
 3. Execute com Node.js ou no navegador
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
