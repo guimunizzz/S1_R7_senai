@@ -1,7 +1,7 @@
 let tipoDoCarro = prompt(
-  "Qual o tipo do carro alugado? (DIGITE 'popular' ou 'luxo'");
+  "Qual o tipo do carro alugado? (DIGITE 'popular' OU 'luxo')");
 
-if (tipoDoCarro != "popular" && "luxo") {
+if (tipoDoCarro != "popular" && tipoDoCarro != "luxo") {
   alert("Voce digitou o tipo de carro de forma errada!");
 } else {
   let diasAlugados = parseInt(prompt("Quantos dias de aluguel?"));
@@ -13,15 +13,15 @@ if (tipoDoCarro != "popular" && "luxo") {
   } else {
     if (tipoDoCarro == "popular") {
       if (kmPercorridos > 100) {
-        valorTotal = diasAlugados * 90 + 0.1 * kmPercorridos;
+        valorTotal = (diasAlugados * 90) + (0.1 * kmPercorridos);
       } else {
-        valorTotal = diasAlugados * 90 + 0.2 * kmPercorridos;
+        valorTotal = (diasAlugados * 90) + (0.2 * kmPercorridos);
       }
     } else {
       if (kmPercorridos > 200) {
-        valorTotal = diasAlugados * 150 + 0.25 * kmPercorridos;
+        valorTotal = (diasAlugados * 150) + (0.25 * kmPercorridos);
       } else {
-        valorTotal = diasAlugados * 150 + 0.3 * kmPercorridos;
+        valorTotal = (diasAlugados * 150) + (0.3 * kmPercorridos);
       }
     }
     alert(`O valor total a pagar é de: ${valorTotal}`);
