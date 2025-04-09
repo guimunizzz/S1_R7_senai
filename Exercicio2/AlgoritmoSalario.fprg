@@ -4,9 +4,9 @@
         <attribute name="name" value="AlgoritmoSalario"/>
         <attribute name="authors" value="DES-MH"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-04-08 02:17:10 "/>
+        <attribute name="saved" value="2025-04-09 07:52:42 "/>
         <attribute name="created" value="REVTLU1IO0RFU0tUT1AtOFA3VTVNODsyMDI1LTA0LTAyOyIxMToxMTozNSAiOzI2NDE="/>
-        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtOFA3VTVNODsyMDI1LTA0LTA4OyIwMjoxNzoxMCAiOzI7Mjc1NQ=="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtOFA3VTVNODsyMDI1LTA0LTA5OyIwNzo1Mjo0MiAiOzM7Mjc2Ng=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -32,7 +32,7 @@
                                     <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.12)"/>
                                 </then>
                                 <else>
-                                    <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt; 15">
+                                    <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt;= 10">
                                         <then>
                                             <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.07)"/>
                                         </then>
@@ -63,7 +63,7 @@
                                             <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.14)"/>
                                         </then>
                                         <else>
-                                            <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt; 20">
+                                            <if expression="qntdAnos &gt;= 5 &amp;&amp; qntdAnos &lt;=15">
                                                 <then>
                                                     <assign variable="novoSalario" expression="salarioAtual + (salarioAtual * 0.08)"/>
                                                 </then>
