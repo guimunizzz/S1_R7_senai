@@ -1,14 +1,14 @@
 let tipoDoCarro = prompt(
   "Qual o tipo do carro alugado? (DIGITE 'popular' OU 'luxo')");
 
-if (tipoDoCarro != "popular" && tipoDoCarro != "luxo") {
+if (tipoDoCarro != "popular" && tipoDoCarro != "luxo") { // Verificando se digitou corretamente o tipo do carro
   alert("Voce digitou o tipo de carro de forma errada!");
 } else {
   let diasAlugados = parseInt(prompt("Quantos dias de aluguel?"));
   let kmPercorridos = parseFloat(prompt("Quantos KM foram percorridos?"));
   let valorTotal = parseFloat;
 
-  if (isNaN(diasAlugados && kmPercorridos)) {
+  if (isNaN(diasAlugados && kmPercorridos)) { // Verificando se foi digitado um numero nas variaveis diasAlugados e kmPercorridos
     alert("ERRO - digite um numero!");
   } else {
     if (tipoDoCarro == "popular") {
